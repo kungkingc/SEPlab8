@@ -1,7 +1,11 @@
+from disk import *
+from pole import *
+from turtle import *
+
 class Hanoi(object):
     def __init__(self,n=3,start="A", workspace= "B", destination="C"):
         self.startp = Pole(start,0,0)
-        self.workingspacep = Pole(workingspace,150,0)
+        self.workspacep = Pole(workspace,150,0)
         self.destinationp = Pole(destination,300,0)
         self.startp.showpole()
         self.workspacep.showpole()
