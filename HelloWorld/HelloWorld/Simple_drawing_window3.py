@@ -1,9 +1,10 @@
 import sys
+from HelloWorld import Simple_drawing_window
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
-class Simple_drawing_window(QWidget):
+class Simple_drawing_window3(Simple_drawing_window):
     def __init__(self):
         QWidget.__init__(self,None)
         self.setWindowTitle("Simple Drawing")
@@ -13,15 +14,12 @@ class Simple_drawing_window(QWidget):
         p = QPainter()
         p.begin(self)
 
-        p.setPen(QColor(0,0,0))
-        p.setBrush(QColor(0,127,0))
-        p.drawPolygon(
-            QPoint(70,100),QPoint(100,110),
-            QPoint(130,100), QPoint(100,150),
-            )
-        p.setPen(QColor(255,127,0))
-        p.setBrush(QColor(255,127,0))
-        p.drawPie(50,150,100,100,0,180*16)
+        
+        p.setBrush(QColor(0,0,0))
+        p.drawPie(50,100,100,100,0,180*32)
+        p.setPen(QColor(200,120,0))
+        p.setBrush(QColor(200,120,0))
+        #p.drawPie(50,150,100,100,0,180*16)
 
         p.drawPolygon(
             QPoint(50,200), QPoint(150,200), QPoint(100,400),
@@ -32,7 +30,7 @@ class Simple_drawing_window(QWidget):
 
 def main():
     app = QApplication(sys.argv)
-    w= Simple_drawing_window()
+    w= Simple_drawing_window3()
     w.show()
     return app.exec_()
 
