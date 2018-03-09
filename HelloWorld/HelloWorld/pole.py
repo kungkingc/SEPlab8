@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 from disk import *
 import turtle
 =======
@@ -7,6 +8,10 @@ import turtle
 =======
 import turtle
 >>>>>>> master
+=======
+from disk import *
+import turtle
+>>>>>>> new-branch
 class Pole(object):
     def __init__(self, name, x, y, thick=5, length=200, color="yellow"):
         self.name = name
