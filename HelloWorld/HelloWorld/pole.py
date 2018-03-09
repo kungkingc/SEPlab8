@@ -1,3 +1,5 @@
+from disk import *
+import turtle
 class Pole(object):
     def __init__(self, name, x, y, thick=5, length=200, color="yellow"):
         self.name = name

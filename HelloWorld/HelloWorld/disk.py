@@ -1,10 +1,17 @@
 from turtle import *
 
+
+
 class Disk(object):
+
     def __init__(self, dname, xpos, ypos, dh, dw, col = "red"):
+
         self.name = dname
+
         self.x = xpos
+
         self.y = ypos
+
         self.h = dh
 
         self.w = dw
