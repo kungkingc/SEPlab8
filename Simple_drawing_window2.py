@@ -1,13 +1,12 @@
+from HelloWorld import Simple_drawing_window
 import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import *
 
-class Simple_drawing_window(QWidget):
+class Simple_drawing_window2(Simple_drawing_window):
     def __init__(self):
-        QWidget.__init__(self,None)
-        self.setWindowTitle("Simple Drawing")
-        self.rabbit = QPixmap("rabbit.png")
+        return super().__init__()
 
     def paintEvent(self,e):
         p = QPainter()
@@ -30,7 +29,7 @@ class Simple_drawing_window(QWidget):
 
 def main():
     app = QApplication(sys.argv)
-    w= Simple_drawing_window()
+    w= Simple_drawing_window2()
     w.show()
     return app.exec_()
 
