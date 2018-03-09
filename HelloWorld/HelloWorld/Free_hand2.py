@@ -100,7 +100,11 @@ class MainWindow(QMainWindow):
         self.resize(500, 500)
         self.clearButton = QPushButton("clear", self.a) 
         self.clearButton.clicked.connect(self.a.clearImage)
+<<<<<<< HEAD
         self.clearButton.move(200,450)
+=======
+        self.clearButton.move(220,450)
+>>>>>>> b23055c25ea943ed26c0e8525496e5a0bf31f2bb
         """
     def clear(self):
         self.a.image.fill(qRgb(255, 255, 255))
