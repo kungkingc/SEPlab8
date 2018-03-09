@@ -1,5 +1,6 @@
 from turtle import *
 
+<<<<<<< HEAD
 
 
 class Disk(object):
@@ -12,6 +13,13 @@ class Disk(object):
 
         self.y = ypos
 
+=======
+class Disk(object):
+    def __init__(self, dname, xpos, ypos, dh, dw, col = "red"):
+        self.name = dname
+        self.x = xpos
+        self.y = ypos
+>>>>>>> ba3f0c2bc38191b10be9e8b6d8ad0649849f5c8a
         self.h = dh
 
         self.w = dw
